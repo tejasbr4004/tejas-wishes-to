@@ -1,0 +1,477 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary: rgba(90, 88, 89, 0.998);
+    --secondary: rgba(226, 223, 227, 0.847);
+}
+
+.container1 {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    right: 0%;
+    bottom: 0%;
+
+}
+
+.container2 {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 100vh;
+}
+
+.container2 img {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    background-position: center;
+
+}
+
+.video {
+    position: fixed;
+    /*From absolute*/
+    top: 50%;
+    left: 50%;
+    bottom: 0%;
+    min-width: 100%;
+    z-index: -100;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.header {
+    width: 100%;
+    height: 75px;
+    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 14px;
+    background: linear-gradient(135deg, var(--primary), var(--secondary));
+}
+
+.navbar {
+    width: 584px;
+    height: 71px;
+    /*  border: 2px solid red;*/
+    color: rgb(66, 7, 7);
+    margin: 0px auto;
+    padding: 6px 41px;
+    border-radius: 25px;
+    cursor: pointer;
+
+}
+
+.navbar ul li {
+    /*  border: 2px solid black;*/
+    text-decoration: none;
+    display: inline-block;
+    padding: 5px;
+    margin: 4px;
+    border-radius: 10px;
+}
+
+.navbar ul li:hover {
+    background-color: rgb(249, 107, 131);
+    text-decoration: underline;
+    text-decoration-color: rgb(250, 249, 249);
+}
+
+.navbar ul li a {
+    font-family: 'Baloo Bhai 2', cursive;
+    text-decoration: none;
+    text-align: center;
+    color: rgb(250, 242, 248);
+    font-size: larger;
+    font-weight: bold;
+    text-decoration: underline;
+    text-decoration-style: solid;
+    text-decoration-thickness: 3px;
+    text-decoration-color: rgb(245, 90, 204);
+    cursor: pointer;
+}
+
+.navbar ul li a:hover {
+    text-decoration: underline;
+    text-decoration-thickness: 3px;
+    text-decoration-color: rgb(250, 249, 249);
+}
+
+.btn {
+    width: 200px;
+    height: 70px;
+    /* border: 2px solid green;*/
+    border-radius: 15px;
+    margin: auto;
+    padding: 13px 11px;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    /* background: linear-gradient(135deg,var(--primary),var(--secondary));*/
+
+}
+
+.btn button {
+    border: 2px solid rgba(205, 19, 187, 0.857);
+    background-color: rgb(247, 175, 226);
+    color: whitesmoke;
+    margin: 4px;
+    padding: 0px 1px;
+    font-family: 'Baloo Bhai 2', cursive;
+    font-size: large;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.btn button:hover {
+    background-color: rgb(243, 171, 252);
+    border-color: rgb(136, 32, 136);
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-decoration-color: rgb(243, 119, 228);
+}
+
+.logo {
+    width: 151px;
+    height: 71px;
+    margin: auto;
+    padding: 3px;
+    /*  border: 2px solid lightseagreen;*/
+    border-radius: 10px;
+    position: absolute;
+    /* background: linear-gradient(135deg,var(--primary),var(--secondary));*/
+
+}
+
+.logo img {
+    background-color: rgb(86, 84, 84);
+    margin: 2px;
+    padding: -23px;
+    align-items: center;
+    width: 137px;
+    cursor: pointer;
+}
+
+.content {
+    /* border: 2px solid blue;*/
+    width: 450px;
+    height: 431px;
+    margin: 107px;
+    padding: 39px;
+}
+
+.content h1 {
+    color: antiquewhite;
+    margin: 10px;
+    padding: 8px;
+    font-family: 'pacifico', cursive;
+    font-size: xxx-large;
+}
+
+.content h3 {
+    color: rgba(227, 86, 230, 0.897);
+    margin: 5px;
+    padding: 4px 57px;
+    font-family: 'Tiro Kannada', serif;
+    font-size: xx-large;
+    text-decoration: underline;
+    text-decoration-color: antiquewhite;
+    text-decoration-thickness:4px;
+    cursor: pointer;
+}
+
+.content h5 {
+    color: rgb(248, 159, 224);
+    margin: 7px;
+    padding: 6px;
+    font-family: 'Tiro Kannada', serif;
+    font-size: x-large;
+}
+
+.content button {
+    width: 150px;
+    height: 40px;
+    background-color: rgb(238, 147, 238);
+    color: rgb(104, 25, 93);
+    margin: -18px 96px;
+    border-radius: 21px;
+    padding: 5px -8px;
+    border-color: rgb(250, 8, 141);
+    font-weight: bold;
+    font-family: 'pacifico', cursive;
+    font-size: medium;
+    cursor: pointer;
+    align-content: center;
+}
+
+.content button:hover {
+    background-color: rgb(246, 173, 173);
+    border-color: rgb(247, 5, 45);
+    color: rgb(217, 61, 87);
+    text-decoration: underline;
+    text-decoration-color: rgb(248, 221, 248);
+    text-decoration-thickness: 3px;
+}
+
+.content h6 {
+    color: rgb(238, 137, 137);
+    margin: 7px 2px;
+    padding: 6px 2px;
+    font-family: 'Tiro Kannada', serif;
+    font-size: large;
+}
+
+.year {
+
+    width: 324px;
+    height: 350px;
+    margin: 3px 6px;
+    padding: 2px 6px;
+    position: absolute;
+    right: 26px;
+    top: 150px;
+}
+
+.year h1 {
+    position: relative;
+    top: -25px;
+    left: 20px;
+    font-size: 250px;
+    color: rgb(246, 133, 239);
+}
+.year h1:hover{
+    color: pink;
+    cursor: pointer;
+}
+
+.year h3 {
+    position: relative;
+    bottom: 101px;
+    left: 4px;
+    padding: 1px 32px;
+    /* right: 35px; */
+    font-size: xxx-large;
+    color: rgb(187, 6, 187);
+}
+.year h3:hover{
+    color: rgb(171, 7, 186);
+    cursor: pointer;
+    text-decoration: underline;
+    text-decoration-color: antiquewhite;
+    text-decoration-thickness: 4px;
+}
+
+.year h6 {
+    color: rgb(122, 28, 125);
+    font-size: smaller;
+    margin: 1px 130px;
+    position: relative;
+    top: -101px;
+    left: 94px;
+}
+
+
+.leftcol {
+    width: 75px;
+    height: 100vh;
+    font-style: italic;
+    font-size: 50px;
+    position: absolute;
+    left: 0;
+}
+
+.rightcol {
+    width: 75px;
+    height: 100vh;
+    font-style: italic;
+    font-size: 40px;
+    position: absolute;
+    right: 0;
+}
+
+.leftcol h1 {
+    color: antiquewhite;
+    margin: 15px 2px;
+    padding: 11px 3p
+}
+.leftcol h1:hover{
+    cursor: pointer;
+    color: pink;
+    
+}
+
+.rightcol h1 {
+    color:antiquewhite;
+    margin: -4px 4px;
+    padding: 3px 3px;
+}
+.rightcol h1:hover{
+    cursor: pointer;
+    color: pink;
+    
+}
+
+.img1 {
+    width: 150px;
+    height: 200px;
+    margin: 4px 4px;
+    padding: 4px 4px;
+    position: absolute;
+    right: 80px;
+    top: 10px;
+    
+}
+
+.img1 img {
+    width: 281px;
+    height: 416px;
+    margin: 4px;
+    padding: 4px;
+    position: absolute;
+    right: -11px;
+    top: -14px;
+    border: 4px solid whitesmoke; 
+}
+.img1 img:hover{
+    border-top-color: rgb(248, 19, 221);
+    border-bottom-color: rgb(248, 19, 221);
+    border-left-color: rgb(183, 8, 236);
+    border-right-color:  rgb(183, 8, 236);
+    cursor: pointer;
+
+}
+.img2 {
+    width: 281px;
+    height: 416px;
+    margin: 4px 4px;
+    padding: 4px 4px;
+    position: absolute;
+    left: 80px;
+    top: 188px;
+}
+.img2 img{
+    border: 4px solid whitesmoke;
+    width: 281px;
+    height: 428px;
+    margin: 0px 1px;
+}
+.img2 img:hover{
+    border-top-color: rgb(248, 19, 221);
+    border-bottom-color: rgb(248, 19, 221);
+    border-left-color: rgb(183, 8, 236);
+    border-right-color:  rgb(183, 8, 236);
+    cursor: pointer;
+
+}
+
+.belowimg1{
+    border: 4px solid white;
+    width: 225px;
+    height: 175px;
+    position: absolute;
+    color: antiquewhite;
+    top: 454px;
+    right: 99px;
+    font-size: x-large;
+    font-family: 'Pacifico';
+    border-radius: 40px;
+    border-color: purple;
+    border-color: brown;
+    padding: 5px 21px;
+    background-color: #760c0c;
+}
+.belowimg1:hover{
+    text-decoration: underline;
+    border-top-color: rgb(248, 19, 221);
+    border-bottom-color: rgb(248, 19, 221);
+    border-left-color: rgb(183, 8, 236);
+    border-right-color:  rgb(183, 8, 236);
+    cursor: pointer;
+}
+.aboveimg2{
+    color: antiquewhite;
+    border: 4px solid white;
+    width: 193px;
+    height: 150px;
+    position: absolute;
+    left: 91px;
+    padding: 10px 6px;
+    top: 10px;
+    font-size: x-large;
+    font-family: 'Pacifico';
+    border-radius: 35px;
+    border-color: purple;
+    border-color: brown;
+    background-color: #760c0c;
+}
+.aboveimg2:hover{ text-decoration: underline;
+    border-top-color: rgb(248, 19, 221);
+    border-bottom-color: rgb(248, 19, 221);
+    border-left-color: rgb(183, 8, 236);
+    border-right-color:  rgb(183, 8, 236);
+    cursor: pointer;
+
+}
+.maincontent{
+    position: absolute;
+    right: 29%;
+    top: 10px;
+    width: 550px;
+    height: 610px;
+    padding: 2px 5px;
+    margin: 0px 2px;
+    font-size: x-large;
+    font-style: italic;
+    display: flex;
+    border-bottom-right-radius: 55px;
+    border-top-left-radius: 70px;
+    word-spacing: 3px;
+    color:antiquewhite
+}
+.maincontent:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.maincontent p{
+    margin: 2px -4px;
+    padding: 8px 13px;
+}
+.maincontent p:hover{
+    text-decoration:underline;
+    text-decoration-color: rgb(233, 153, 247);
+}
+.maincontent p strong{
+    color: rgb(237, 24, 237);
+    font-size:xx-large;
+    text-decoration: none;
+    text-transform: none;
+}
+
+
+.maincontent h2{
+    color: rgb(240, 174, 232);
+    font-size:xx-large;
+    text-align: center;
+    text-shadow: #760c0c;
+    text-decoration: underline;
+    cursor: pointer;
+}
+.last{
+    width: 100%;
+    height: 112px;
+    position: absolute;
+    top: 95vh;
+    display: inline-block;
+    background-color: #e10a2f;
+    color: black;
+    font-size: larger;
+    text-align: center;
+    justify-content: center;
+}
